@@ -38,8 +38,7 @@ the value is divisible by both, the player is to say "FizzBuzz!". The winner is 
 making the other player the winner
 
 This game has been popularised also as a programming technical question as it showcases a developers coding styles and preferences in
-solving problems and organising their code. One of the big determining factors, is whether the developer is someone who codes more for
-producing a result, performance, or for developing a reusable solution. Depending on the hiring team needs, asking this question can be very insightful in whether the potential candidate aligns with your teams values.
+solving problems and organising their code. One of the big factors, this question often showcases is whether the developer favors coding to produce a result, to be performant, or for high reusability. Depending on the hiring team needs, asking this question can be very insightful in whether the potential candidate aligns with your teams values.
 
 **References**
 * https://www.youtube.com/watch?v=QPZ0pIK_wsc&t=130s
