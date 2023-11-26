@@ -39,7 +39,7 @@ making the other player the winner
 
 This game has been popularised also as a programming technical question as it showcases a developers coding styles and preferences in
 solving problems and organising their code. One of the big determining factors, is whether the developer is someone who codes more for
-producing a result, or for developing a reusable solution
+producing a result, performance, or for developing a reusable solution. Depending on the hiring team needs, asking this question can be very insightful in whether the potential candidate aligns with your teams values.
 
 **References**
 * https://www.youtube.com/watch?v=QPZ0pIK_wsc&t=130s
@@ -58,8 +58,36 @@ code. The only time I believe these highly optimised and clever implementations 
 importance in the development of the application. Additionally, software development is most often an iterative process and refactoring
 for performance is often a much easier task, then refactoring for legibility and reusability.
 
-**Note:** I read up on a heavily performant implementation of solving fizzbuzz. You can see it in `fizzbuzz_fast.py`. To my case and point, it took
+I read up on a heavily performant implementation of solving fizzbuzz. You can see it in `fizzbuzz_fast.py`. To my case and point, it took
 me a good 10-15 minutes of researching and adding `print()` statements to understand how this did what it did. I'm not a fan of it due to how
 quickly the code has become unlegible and requiring more niche python knowledge to the performance increase that doesn't really matter. I have
-added commenting to the code to explain how it works.
+added commenting to the code to explain how it works if you are interested, and so that I don't forget if I stumble upon this in the future.
+
+I still favor my implementation, because although `fizzbuzz_fast.py`'s implementation is faster, `fizzbuzz.py`'s implementation is much easier 
+to expand and extend. Say we want to exapnd the game now to Fizz Buzz Bang!. Where 'Bang!' is for numbers that divide nicely by 7. We can 
+easily do this by implementing as follows:
+```python
+def is_bang(number: int) -> bool:
+    return is_divisible_by(number, 7)
+```
+and then add it as an additional condition in the loop:
+```python
+for i in range(1, count_to+1):
+    # ...
+
+    if is_bang(i):
+        output += "Bang"
+    
+    # ...
+```
+
+We could even evolve the game in a new direction to include 'Prime!'. This can be easily done by implemented as:
+```python
+def is_prime(number: int) -> bool:
+    for i in range(2, number):
+        if is_divisible_by(number, i):
+            return False
+    return True
+```
+And then again, added as an additional condition in the loop
 
