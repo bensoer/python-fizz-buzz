@@ -27,7 +27,7 @@ Example Usage:
 python3 ./fizzbuzz.py
 
 # Play FizzBuss up to 85
-python3 ./fizzbuss.py 85
+python3 ./fizzbuzz.py 85
 ```
 
 # What is FizzBuzz ?
