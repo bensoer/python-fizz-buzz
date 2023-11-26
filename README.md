@@ -52,10 +52,11 @@ modularity, legibility and reusability. This problem is not one that demands per
 application to operate, so legibility to figure out what is going on and the scalability for the program to be easily modified and expanded
 on by a developer is my preferred priority in the development. My preference, is that code should be highly legible and organised. Highly
 optimised and clever implementations exist, but these always come at the expense of requiring a more skilled developer to understand and
-effectively modify or add on to the application without causing more chaos in the legibility and introducing more bugs into the existing
+effectively modify or add on to the application without causing more chaos in the legibility and/or introducing more bugs into the existing
 code. The only time I believe these highly optimised and clever implementations are valuable is when speed and performance is the utmost 
-importance in the development of the application. Additionally, software development is most often an iterative process and refactoring
-for performance is often a much easier task, then refactoring for legibility and reusability.
+importance in the development of the application. 
+
+As an additional point, software development is most often an iterative process and refactoring for performance is often a much easier task, then refactoring for legibility and reusability.
 
 ### An Argument Against A Performant FizzBuzz
 I read up on a heavily performant implementation of solving fizzbuzz. You can see it in `fizzbuzz_fast.py`. To my case and point, it took
