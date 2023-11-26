@@ -27,7 +27,6 @@ def is_buzz(number: int) -> bool:
     '''
     return is_divisible_by(number, 5)
 
-
 def main():
 
     # Parse out arguments from the console

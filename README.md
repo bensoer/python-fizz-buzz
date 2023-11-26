@@ -84,6 +84,11 @@ for i in range(1, count_to+1):
 We could even evolve the game in a new direction to include 'Prime!'. This can be easily done by implemented as:
 ```python
 def is_prime(number: int) -> bool:
+    
+    # prime numbers must be positive numbers and 1 is not a prime
+    if number < 2:
+        return False
+    
     for i in range(2, number):
         if is_divisible_by(number, i):
             return False
